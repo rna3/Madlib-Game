@@ -4,8 +4,8 @@
 class Story:
     """Madlibs story.
 
-    To  make a story, pass a list of prompts, and the text
-    of the template.
+    To  make a story, pass in a code, a title, a list of prompts, and the text
+    of the template
 
         >>> s = Story(["noun", "verb"],
         ...     "I love to {verb} a good {noun}.")
@@ -50,8 +50,9 @@ story2 = Story(
     "future_story",
     "In the Distant Future",
     ["place", "noun", "verb",],
-    """In the distant future there is a {place}.In it's shadow rests a
+    """In the distant future there is a {place}. In it's shadow rests a
        beautiful {noun}. It will love to {verb} for some reason."""
 )
 
+# dictionary for story codes
 stories = {s.code: s for s in [story, story2]}
